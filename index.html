@@ -126,56 +126,12 @@ input:focus{border-color:var(--red2);box-shadow:0 0 0 3px rgba(227,35,45,.12)}
 /* IMPORTANTE: en GitHub Pages las keys en JavaScript son visibles.
    El uso único aquí se registra por navegador (localStorage), no globalmente. */
 const VALID_KEYS = [
-  "RUZZOS-UKTF-J7YA",
-  "RUZZOS-E4YQ-TQEE",
-  "RUZZOS-78UT-ASLK",
-  "RUZZOS-WTK7-WFNK",
-  "RUZZOS-FY53-ZDEB",
-  "RUZZOS-MDLY-MBR3",
-  "RUZZOS-PPZB-8U5X",
-  "RUZZOS-32QW-GCBF",
-  "RUZZOS-75NL-FDVP",
-  "RUZZOS-7MKN-X3LV",
-  "RUZZOS-WZHP-KMC7",
-  "RUZZOS-25EZ-RTDW",
-  "RUZZOS-DTZX-6EC2",
-  "RUZZOS-B7TD-945E",
-  "RUZZOS-9FH5-93TM",
-  "RUZZOS-AQ8D-R2QE",
-  "RUZZOS-KJD3-C2MH",
-  "RUZZOS-NKA6-CFYZ",
-  "RUZZOS-B5V2-N94P",
-  "RUZZOS-KJMP-KTG8",
-  "RUZZOS-ABVC-728U",
-  "RUZZOS-K4JV-VLGK",
-  "RUZZOS-ACSX-3T77",
-  "RUZZOS-DUCQ-4M5A",
-  "RUZZOS-DP8T-RFSD",
-  "RUZZOS-VGJ5-48G2",
-  "RUZZOS-LTM4-ZFJP",
-  "RUZZOS-MEHG-NTAJ",
-  "RUZZOS-Y245-MPYE",
-  "RUZZOS-7DDS-6Y89",
-  "RUZZOS-WMKM-K4JJ",
-  "RUZZOS-6KYE-MBPA",
-  "RUZZOS-SUAC-VEDV",
-  "RUZZOS-8ZV3-MXRS",
-  "RUZZOS-UGM6-FU86",
-  "RUZZOS-9YCJ-2V85",
-  "RUZZOS-MYVD-JM6C",
-  "RUZZOS-LC3D-AZ6P",
-  "RUZZOS-CC93-8XG4",
-  "RUZZOS-XWXY-KPW8",
-  "RUZZOS-QQ2Y-2Z92",
-  "RUZZOS-MNK4-MSDU",
-  "RUZZOS-KJNP-CQSS",
-  "RUZZOS-8TAJ-3TBW",
-  "RUZZOS-BDF9-8ASU",
-  "RUZZOS-2KKG-7VY2",
-  "RUZZOS-8384-LSBT",
-  "RUZZOS-WZNU-RAAF",
-  "RUZZOS-FELA-U6SA",
-  "RUZZOS-MUEX-UTFQ"
+  "RUZ2OS-8K7A-3TBN",
+  "RUZ2OS-BDF9-8ASU",
+  "RUZ2OS-2KKG-7WZ2",
+  "RUZ2OS-8394-LSBT",
+  "RUZ2OS-WZNU-RA6F",
+  
 ];
 const USED_STORAGE_KEY = "ruzzos_net_used_keys_v2";
 const form = document.getElementById("keyForm");
@@ -294,15 +250,17 @@ const DOWNLOADS = [
     icon: "📦",
     url: "https://enlace-del-recurso-03.com"
    },
-   {
-    title: "Recurso 03",
-    description: "Tercera descripción",
-    icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
-   
-}));
-const grid=document.getElementById("downloadGrid");
-DOWNLOADS.forEach((item,i)=>{
+ {
+  title: "Recurso 20",
+  description: "Tu descripción",
+  icon: "📦",
+  url: "https://tu-enlace-real.com"
+}
+];
+
+const grid = document.getElementById("downloadGrid");
+
+DOWNLOADS.forEach((item, i) => {
   const card=document.createElement("article");
   card.className="tile glass download-tile";
   const top=document.createElement("div");top.className="tile-top";
