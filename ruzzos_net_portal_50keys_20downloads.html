@@ -165,12 +165,14 @@ form.addEventListener("submit",function(event){
   if(!VALID_KEYS.includes(entered)){error.textContent="KEY no válida. Comprueba que esté escrita correctamente.";return;}
   if(used.includes(entered)){error.textContent="Esta KEY ya fue utilizada en este navegador.";return;}
   used.push(entered);localStorage.setItem(USED_STORAGE_KEY,JSON.stringify(used));
-  error.textContent="";welcome.style.display="none";login.style.display="none";
-  dashboard.style.display="block";dashboard.style.animation="rise .65s ease both";
-  window.scrollTo({top:0,behavior:"smooth"});
+  error.textContent="";
+login.style.display="none";
+dashboard.style.display="block";
+dashboard.style.animation="rise .65s ease both";
+window.scrollTo({top:0,behavior:"smooth"});
 });
 document.getElementById("logout").addEventListener("click",function(){
-  dashboard.style.display="none";welcome.style.display="block";login.style.display="block";
+  dashboard.style.display="none";login.style.display="block";
   document.getElementById("key").value="";window.scrollTo({top:0,behavior:"smooth"});
 });
 </script>
