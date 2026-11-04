@@ -126,11 +126,108 @@ input:focus{border-color:var(--red2);box-shadow:0 0 0 3px rgba(227,35,45,.12)}
 /* IMPORTANTE: en GitHub Pages las keys en JavaScript son visibles.
    El uso único aquí se registra por navegador (localStorage), no globalmente. */
 const VALID_KEYS = [
-  "RUZ2OS-8K7A-3TBN",
-  "RUZ2OS-BDF9-8ASU",
-  "RUZ2OS-2KKG-7WZ2",
-  "RUZ2OS-8394-LSBT",
-  "RUZ2OS-WZNU-RA6F",
+ "RUZOS-A7K9-M2PX",
+  "RUZOS-B4T8-N6QW",
+  "RUZOS-C9F3-K5JD",
+  "RUZOS-D2H7-P8LM",
+  "RUZOS-E6W4-R9ZX",
+  "RUZOS-F8N2-T3VK",
+  "RUZOS-G5P9-X7BD",
+  "RUZOS-H3M6-Z4QK",
+  "RUZOS-J7D2-A9FW",
+  "RUZOS-K4X8-B6NP",
+  "RUZOS-L9Q3-C5MT",
+  "RUZOS-M2V7-D8HX",
+  "RUZOS-N6B4-E9KP",
+  "RUZOS-P8Z2-F3LW",
+  "RUZOS-Q5K9-G7DN",
+  "RUZOS-R3T6-H4XM",
+  "RUZOS-S7W2-J9BQ",
+  "RUZOS-T4A8-K6FV",
+  "RUZOS-V9C3-L5NP",
+  "RUZOS-W2D7-M8QX",
+  "RUZOS-X6F4-N9RK",
+  "RUZOS-Y8G2-P3TW",
+  "RUZOS-Z5H9-Q7AL",
+  "RUZOS-A3J6-R4BM",
+  "RUZOS-B7K2-S9CN",
+  "RUZOS-C4L8-T6DP",
+  "RUZOS-D9M3-V5EQ",
+  "RUZOS-E2N7-W8FR",
+  "RUZOS-F6P4-X9GS",
+  "RUZOS-G8Q2-Y3HT",
+  "RUZOS-H5R9-Z7JV",
+  "RUZOS-J3S6-A4KW",
+  "RUZOS-K7T2-B9LX",
+  "RUZOS-L4V8-C6MY",
+  "RUZOS-M9W3-D5NZ",
+  "RUZOS-N2X7-E8PA",
+  "RUZOS-P6Y4-F9QB",
+  "RUZOS-Q8Z2-G3RC",
+  "RUZOS-R5A9-H7SD",
+  "RUZOS-S3B6-J4TE",
+  "RUZOS-T7C2-K9UF",
+  "RUZOS-V4D8-L6WG",
+  "RUZOS-W9E3-M5XH",
+  "RUZOS-X2F7-N8YJ",
+  "RUZOS-Y6G4-P9ZK",
+  "RUZOS-Z8H2-Q3AL",
+  "RUZOS-A5J9-R7BM",
+  "RUZOS-B3K6-S4CN",
+  "RUZOS-C7L2-T9DP",
+  "RUZOS-D4M8-V6EQ",
+  "RUZOS-E9N3-W5FR",
+  "RUZOS-F2P7-X8GS",
+  "RUZOS-G6Q4-Y9HT",
+  "RUZOS-H8R2-Z3JV",
+  "RUZOS-J5S9-A7KW",
+  "RUZOS-K3T6-B4LX",
+  "RUZOS-L7V2-C9MY",
+  "RUZOS-M4W8-D6NZ",
+  "RUZOS-N9X3-E5PA",
+  "RUZOS-P2Y7-F8QB",
+  "RUZOS-Q6Z4-G9RC",
+  "RUZOS-R8A2-H3SD",
+  "RUZOS-S5B9-J7TE",
+  "RUZOS-T3C6-K4UF",
+  "RUZOS-V7D2-L9WG",
+  "RUZOS-W4E8-M6XH",
+  "RUZOS-X9F3-N5YJ",
+  "RUZOS-Y2G7-P8ZK",
+  "RUZOS-Z6H4-Q9AL",
+  "RUZOS-A8J2-R3BM",
+  "RUZOS-B5K9-S7CN",
+  "RUZOS-C3L6-T4DP",
+  "RUZOS-D7M2-V9EQ",
+  "RUZOS-E4N8-W6FR",
+  "RUZOS-F9P3-X5GS",
+  "RUZOS-G2Q7-Y8HT",
+  "RUZOS-H6R4-Z9JV",
+  "RUZOS-J8S2-A3KW",
+  "RUZOS-K5T9-B7LX",
+  "RUZOS-L3V6-C4MY",
+  "RUZOS-M7W2-D9NZ",
+  "RUZOS-N4X8-E6PA",
+  "RUZOS-P9Y3-F5QB",
+  "RUZOS-Q2Z7-G8RC",
+  "RUZOS-R6A4-H9SD",
+  "RUZOS-S8B2-J3TE",
+  "RUZOS-T5C9-K7UF",
+  "RUZOS-V3D6-L4WG",
+  "RUZOS-W7E2-M9XH",
+  "RUZOS-X4F8-N6YJ",
+  "RUZOS-Y9G3-P5ZK",
+  "RUZOS-Z2H7-Q8AL",
+  "RUZOS-A6J4-R9BM",
+  "RUZOS-B8K2-S3CN",
+  "RUZOS-C5L9-T7DP",
+  "RUZOS-D3M6-V4EQ",
+  "RUZOS-E7N2-W9FR",
+  "RUZOS-F4P8-X6GS",
+  "RUZOS-G9Q3-Y5HT",
+  "RUZOS-H2R7-Z8JV",
+  "RUZOS-J6S4-A9KW",
+  "RUZOS-K8T2-B3LX",
   
 ];
 const USED_STORAGE_KEY = "ruzzos_net_used_keys_v2";
@@ -143,118 +240,136 @@ const error = document.getElementById("error");
 /* EDITA estos 20 enlaces: cambia url:"#", por tu URL de descarga real. */
 const DOWNLOADS = [
   {
-    title: "Aimbot Pecho",
+    title: "Aim Pecho sin Antena",
     description: "Pega todo rojo dandole al pecho",
     icon: "📦",
     url: "https://www.mediafire.com/file/7bj4f4qndv5eaq0/AIMBOT_PECHO_RUZZOS_SIN_ANTENA.3105/file"
   },
   {
-    title: "Recurso 02",
-    description: "Segunda descripción",
+    title: "Aim Drag + Antena",
+    description: "Pega todo rojo dandole al lado de la cebeza + una antena en el brazo",
     icon: "📦",
-    url: "https://enlace-del-recurso-02.com"
+    url: "https://www.mediafire.com/file/tlpbjpe97n4oy70/Head%Rúzzos.net.3105/file"
   },
   {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Lock + Antena",
+    description: "Te da mayor precision para dar en la cabeza + una antena en el brazo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/axgp3c12dcxalap/AIM_LOCK_ANTEN_FREE_RUZZOS_FFTH.3105/file"
    },
    {
-    title: "Recurso 03",
+    title: "Aim Drag + Antena",
     description: "Tercera descripción",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/2stpn8t1bm9lbsi/AIM_DRAG_RUZZOSS_VIP_ANTEN_FFTH-2.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Drag",
+    description: "Pega todo rojo dandole al cuello",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/nyk9yzhf8w6tsuk/AIM_DRAG_RUZZOS_FFTH.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim cuello",
+    description: "Pega todo rojo dandole al cuello",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/0o0vuqw2hkukfht/AIM_NECK_VIP_RUZZOS_FFTH.3105/file"
     },
   {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Bung",
+    description: "Facilita y extremese la mira para derribar al enemigo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/js3vs86xqb93dge/AIMBUNG_ANTENA+RUZZOSFFTH.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Balas Magicas",
+    description: "Le pegas al enemigo solo disparandole al lado",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/oswrih1ti2wjzwk/BalasMagicasRuzzosNet.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Balas Magicas + Antena",
+    description: "Le pegas al enemigo solo disparandole al lado + una antena en el brazo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/mf333895ftjbfyc/AIM_MAGIC_ANTEN_RUZZOS_FREE_FFTH.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Balas Magicas",
+    description: "Le pegas al enemigo solo disparandole al lado",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/t3r4f1ydwlkfd9h/AIM_MAGIC_RUZZOS_FREE_FFTH.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Cuello + Antena",
+    description: "Pega todo rojo dandole al cuello + una antena en el brazo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/jlhw56ksgtsewea/HS+PESCOÇO+++ANTENA.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Pecho (Disimulado)",
+    description: "Pega todo rojo dandole al pecho (tambien daras amarillos)",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/m395g46wysp0byx/Pecho+Disimulado+VIP+rúzzos+net.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Cuello (Test)",
+    description: "Pega todo rojo dandole al cuello",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/yb3x49pbvu1nxsu/Cuellotestcrack.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Pecho",
+    description: "Pega todo rojo dandole al pecho",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/plj3jp2puave266/Pechorúzzoshp.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Balas Magicas (FFMAX)",
+    description: "Le pegas al enemigo solo disparandole al lado",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/tk1qmfa629zclq7/Aim_Magic_Rúzzos_Ffm.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Balas Magicas + Antena (FFMAX)",
+    description: "Le pegas al enemigo solo disparandole al lado + una antena en el brazo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/kf36vpf11jzmrvb/Aim_magic_antena_nuzzlsnet_FFM.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
+    title: "Aim Bung (FFMAX)",
+    description: "Facilita y extremese la mira para derribar al enemigo",
     icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    url: "https://www.mediafire.com/file/qsvaahkyh7eqmhx/Rúzzosnet_Aim_Bung_Ffm.3105/file"
    },
    {
-    title: "Recurso 03",
-    description: "Tercera descripción",
-    icon: "📦",
-    url: "https://enlace-del-recurso-03.com"
+    title: "Aim Cuello (FFMAX)",
+    description: "Pega todo rojo dandole al cuello",
+    icon: ":package:",
+    url: "https://www.mediafire.com/file/z22e3ko12z8v7js/Aim_Rúzzos_Neck_Ffm.3105/file"
    },
- {
-  title: "Recurso 20",
-  description: "Tu descripción",
-  icon: "📦",
-  url: "https://tu-enlace-real.com"
+   {
+    title: "Aim Drag + Antena (FFMAX)",
+    description: "Pega todo rojo dandole al lado de la cabeza + una ante en el brazo",
+    icon: ":package:",
+    url: "https://www.mediafire.com/file/hztz5njnukjreid/Aim_Drag_Anten_Rúzzos_Ffm.3105/file"
+   },
+   {
+    title: "Aim Cuello + Antena (FFMAX)",
+    description: "Pega todo rojo dandole al cuello + una ante en el brazo",
+    icon: ":package:",
+    url: "https://www.mediafire.com/file/fcwudvy8dq731im/Aim_Neck_Anten_Rúzzos_Ffm.3105/file"
+   },
+   {
+    title: "Aim Bung + Antena (FFMAX)",
+    description: "Facilita y extremese la mira para derribar al enemigo + una antena en el brazo",
+    icon: "📦",
+    url: "https://www.mediafire.com/file/vitybu61qje9jhv/Aim_Bung_Anten_rúzzos_Ffm.3105/file"
+   },
+   {
+   title: "Aim Drag (FFMAX)",
+   description: "Pega todo rojo dandole al lado de la cabeza.",
+   icon: "📦",
+   url: "https://www.mediafire.com/file/dimnn5yocevbr5p/Aim_Drag_rúzzos_Ffm.3105/filem"
 }
 ];
 
